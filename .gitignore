@@ -3,6 +3,10 @@
 /app/logs/
 /vendor/
 /app/config/parameters.yml
+/app/bootstrap.php.cache
+/build/
+/bin/
+/composer.phar
 *~
 .DS_Store
 .Thumbs
