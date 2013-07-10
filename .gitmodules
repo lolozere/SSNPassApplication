@@ -4,3 +4,6 @@
 [submodule "src/Oxygen/FrameworkBundle"]
 	path = src/Oxygen/FrameworkBundle
 	url = ./src/Oxygen/FrameworkBundle
+[submodule "src/Oxygen/WeezeventBundle"]
+	path = src/Oxygen/WeezeventBundle
+	url = ./src/Oxygen/WeezeventBundle
