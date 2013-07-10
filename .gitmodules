@@ -7,3 +7,6 @@
 [submodule "src/Oxygen/WeezeventBundle"]
 	path = src/Oxygen/WeezeventBundle
 	url = ./src/Oxygen/WeezeventBundle
+[submodule "src/Oxygen/PassbookBundle"]
+	path = src/Oxygen/PassbookBundle
+	url = https://github.com/Soletic/OxygenPassbookBundle
