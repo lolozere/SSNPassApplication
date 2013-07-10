@@ -1,0 +1,9 @@
+ssn_public:
+    resource: "@SSNTherapassBundle/Resources/config/routes/public.yml"
+    prefix: /
+ssn_admin:
+    resource: "@SSNTherapassBundle/Resources/config/routes/admin.yml"
+    prefix: /admin
+ssn_security:
+    resource: "@SSNTherapassBundle/Resources/config/routes/security.yml"
+    prefix: /

@@ -1,9 +1,12 @@
-[submodule "src/Oxygen/FrameworkBundle"]
-	path = src/Oxygen/FrameworkBundle
-	url = ./src/Oxygen/FrameworkBundle
-[submodule "src/Oxygen/WeezeventBundle"]
-	path = src/Oxygen/WeezeventBundle
-	url = ./src/Oxygen/WeezeventBundle
 [submodule "src/Oxygen/PassbookBundle"]
 	path = src/Oxygen/PassbookBundle
 	url = https://github.com/Soletic/OxygenPassbookBundle
+[submodule "src/SSN/TherapassBundle"]
+	path = src/SSN/TherapassBundle
+	url = https://github.com/lolozere/SSNTherapassBundle
+[submodule "src/Oxygen/FrameworkBundle"]
+	path = src/Oxygen/FrameworkBundle
+	url = https://github.com/Soletic/OxygenFrameworkBundle
+[submodule "src/Oxygen/WeezeventBundle"]
+	path = src/Oxygen/WeezeventBundle
+	url = https://github.com/Soletic/OxygenWeezeventBundle

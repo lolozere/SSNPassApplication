@@ -1,0 +1,8 @@
+twig:
+    globals:
+        locale: %locale%
+        salon_url: %salon_url%
+        book_pass_url: %book_pass_url%
+
+oxygen_weezevent:
+      apikey: %weezevent_api_key%

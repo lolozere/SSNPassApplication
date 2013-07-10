@@ -18,6 +18,8 @@ class AppKernel extends Kernel
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
             new SSN\TherapassBundle\SSNTherapassBundle(),
             new Oxygen\FrameworkBundle\OxygenFrameworkBundle(),
+            new Oxygen\WeezeventBundle\OxygenWeezeventBundle(),
+            new Oxygen\PassbookBundle\OxygenPassbookBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
