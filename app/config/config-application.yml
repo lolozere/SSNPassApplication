@@ -4,5 +4,16 @@ twig:
         salon_url: %salon_url%
         book_pass_url: %book_pass_url%
 
+oxygen_framework:
+    templating:
+        layouts:
+            full: 'SSNTherapassBundle::layout.html.twig'
+            light: 'SSNTherapassBundle::layout-light.html.twig'
+            
+oxygen_passbook:
+    entities:
+        event:
+            class: SSN\TherapassBundle\Entity\Event
+
 oxygen_weezevent:
       apikey: %weezevent_api_key%
