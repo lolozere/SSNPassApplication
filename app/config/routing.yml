@@ -7,3 +7,7 @@ ssn_admin:
 ssn_security:
     resource: "@SSNTherapassBundle/Resources/config/routes/security.yml"
     prefix: /
+    
+oxygen_passbook_admin_event:
+    resource: "@OxygenPassbookBundle/Resources/config/routes/event.yml"
+    prefix: /admin

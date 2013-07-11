@@ -1,0 +1,4 @@
+parameters:
+    salon_url: http://www.salon-sante-nature.fr
+    book_pass_url: http://www.salon-sante-nature.fr
+    weezevent_api_key: dba93b785e383e1cce6b7f05a7cc4c9f
