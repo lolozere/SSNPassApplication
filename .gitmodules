@@ -10,3 +10,6 @@
 [submodule "src/Oxygen/WeezeventBundle"]
 	path = src/Oxygen/WeezeventBundle
 	url = https://github.com/Soletic/OxygenWeezeventBundle
+[submodule "src/Oxygen/DatagridBundle"]
+	path = src/Oxygen/DatagridBundle
+	url = https://github.com/Soletic/OxygenDatagridBundle
