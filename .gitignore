@@ -2,11 +2,12 @@
 /app/cache/
 /app/logs/
 /vendor/
-/app/config/parameters.yml
+/app/config/parameters*.yml
 /app/bootstrap.php.cache
 /build/
 /bin/
 /composer.phar
+/app/config/deploy.rb
 *~
 .DS_Store
 .Thumbs
