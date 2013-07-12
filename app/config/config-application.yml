@@ -3,6 +3,7 @@ twig:
         locale: %locale%
         salon_url: %salon_url%
         book_pass_url: %book_pass_url%
+        opened: false
 
 oxygen_framework:
     templating:
