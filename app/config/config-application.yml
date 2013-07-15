@@ -3,7 +3,7 @@ twig:
         locale: %locale%
         salon_url: %salon_url%
         book_pass_url: %book_pass_url%
-        opened: false
+        opened: true
 
 oxygen_framework:
     templating:
@@ -15,6 +15,8 @@ oxygen_passbook:
     entities:
         event:
             class: SSN\TherapassBundle\Entity\Event
+        event_product:
+            class: SSN\TherapassBundle\Entity\EventProduct
 
 oxygen_weezevent:
       apikey: %weezevent_api_key%
