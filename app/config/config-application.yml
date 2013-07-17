@@ -17,6 +17,8 @@ oxygen_passbook:
             class: SSN\TherapassBundle\Entity\Event
         event_product:
             class: SSN\TherapassBundle\Entity\EventProduct
+        event_ticket:
+            class: SSN\TherapassBundle\Entity\EventTicket
 
 oxygen_weezevent:
       apikey: %weezevent_api_key%
