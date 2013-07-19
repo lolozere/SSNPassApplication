@@ -1,9 +1,16 @@
+parameters:
+    oxygen_passbook.event_ticket.form.type_class: SSN\TherapassBundle\Form\Type\EventTicketFormType
+    oxygen_passbook.event_ticket.form.model_class: SSN\TherapassBundle\Form\Model\EventTicketFormModel
+
 twig:
     globals:
         locale: %locale%
         salon_url: %salon_url%
         book_pass_url: %book_pass_url%
-        opened: true
+        open_mode: %open_mode%
+    form:
+        resources:
+            - 'SSNTherapassBundle::forms_template.html.twig'
 
 oxygen_framework:
     templating:
@@ -19,6 +26,11 @@ oxygen_passbook:
             class: SSN\TherapassBundle\Entity\EventProduct
         event_ticket:
             class: SSN\TherapassBundle\Entity\EventTicket
+        event_product_slot:
+            class: SSN\TherapassBundle\Entity\EventProductSlot
 
 oxygen_weezevent:
       apikey: %weezevent_api_key%
+      default:
+          username: gilles.langellotti88@gmail.com
+          password: salon2013

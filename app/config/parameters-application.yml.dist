@@ -1,0 +1,7 @@
+parameters:
+    salon_url: http://www.salon-sante-nature.fr
+    book_pass_url: http://www.salon-sante-nature.fr
+    weezevent_api_key: ~ # API Key of Weezevent
+    open_mode: full # admin or full
+    error_notification: true
+    error_notification_mail: ~ # Email for error notification

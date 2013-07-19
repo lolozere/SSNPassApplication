@@ -1,6 +1,6 @@
 security:
     encoders:
-        Symfony\Component\Security\Core\User\User: plaintext
+        Symfony\Component\Security\Core\User\User: sha512
 
     role_hierarchy:
         ROLE_ADMIN:       ROLE_USER
@@ -10,7 +10,7 @@ security:
         in_memory:
             memory:
                 users:
-                    admin: { password: adminpass, roles: [ 'ROLE_ADMIN' ] }
+                    admin: { password: exHwOy/y1cuvJlvc127qTMroIuFufhv1sDqIn+Ohp80ZfCzY3L0Wnl58j99iT2Hc5/9YoaLPNdli4VkjoCiFRw==, roles: [ 'ROLE_ADMIN' ] }
 
     firewalls:
         admin_area:
