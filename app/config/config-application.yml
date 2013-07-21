@@ -1,6 +1,9 @@
 parameters:
     oxygen_passbook.event_ticket.form.type_class: SSN\TherapassBundle\Form\Type\EventTicketFormType
     oxygen_passbook.event_ticket.form.model_class: SSN\TherapassBundle\Form\Model\EventTicketFormModel
+    oxygen_passbook.booking.form.model_class: SSN\TherapassBundle\Form\Model\BookingFormModel
+    oxygen_passbook.form.booking.type_class: SSN\TherapassBundle\Form\Type\BookingFormType
+    oxygen_passbook.booking.form.class: SSN\TherapassBundle\Form\Handler\BookingForm
 
 twig:
     globals:
@@ -22,12 +25,19 @@ oxygen_passbook:
     entities:
         event:
             class: SSN\TherapassBundle\Entity\Event
+            repository: SSN\TherapassBundle\Entity\Repository\EventRepository
         event_product:
             class: SSN\TherapassBundle\Entity\EventProduct
         event_ticket:
             class: SSN\TherapassBundle\Entity\EventTicket
         event_product_slot:
             class: SSN\TherapassBundle\Entity\EventProductSlot
+        booking_slot:
+            class: SSN\TherapassBundle\Entity\BookingSlot
+        booking_person:
+            class: SSN\TherapassBundle\Entity\BookingPerson
+            repository: SSN\TherapassBundle\Entity\Repository\BookingPersonRepository
+    event_types: [care, conference]
 
 oxygen_weezevent:
       apikey: %weezevent_api_key%

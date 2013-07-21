@@ -11,3 +11,13 @@ ssn_security:
 oxygen_passbook_admin_event:
     resource: "@OxygenPassbookBundle/Resources/config/routes/event.yml"
     prefix: /admin
+oxygen_passbook_admin_booking:
+    resource: "@OxygenPassbookBundle/Resources/config/routes/booking-admin.yml"
+    prefix: /admin
+oxygen_passbook_admin_printing:
+    resource: "@OxygenPassbookBundle/Resources/config/routes/printing-admin.yml"
+    prefix: /admin   
+    
+ssn_therapass_booking:
+    resource: "@SSNTherapassBundle/Resources/config/routes/booking.yml"
+    prefix: /booking   
