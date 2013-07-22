@@ -16,8 +16,8 @@ oxygen_passbook_admin_booking:
     prefix: /admin
 oxygen_passbook_admin_printing:
     resource: "@OxygenPassbookBundle/Resources/config/routes/printing-admin.yml"
-    prefix: /admin   
-    
+    prefix: /admin
+ 
 ssn_therapass_booking:
     resource: "@SSNTherapassBundle/Resources/config/routes/booking.yml"
     prefix: /booking   

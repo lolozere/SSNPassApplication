@@ -31,7 +31,7 @@ security:
             form_login:
                 login_path:  ssn_therapass_admin_login
                 check_path:  ssn_therapass_admin_login_check
-                default_target_path: oxygen_passbook_event_list
+                default_target_path: oxygen_passbook_booking_event_list
             logout:
                 path:   ssn_therapass_admin_logout
                 target: /
@@ -41,6 +41,7 @@ security:
 
     access_control:
         - { path: /login, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/admin/print-bookings, roles: IS_AUTHENTICATED_ANONYMOUSLY }
         - { path: ^/admin, roles: ROLE_ADMIN }
         - { path: ^/booking, roles: ROLE_BOOKER }
         #- { path: ^/login, roles: IS_AUTHENTICATED_ANONYMOUSLY, requires_channel: https }

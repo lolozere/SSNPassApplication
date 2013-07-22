@@ -5,3 +5,5 @@ parameters:
     open_mode: full # admin or full
     error_notification: true
     error_notification_mail: ~ # Email for error notification
+	mail_contact: ~ # Email contact
+    passbook_url: http://pass.salon-sante-nature.fr

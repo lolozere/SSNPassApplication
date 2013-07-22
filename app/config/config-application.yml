@@ -11,6 +11,8 @@ twig:
         salon_url: %salon_url%
         book_pass_url: %book_pass_url%
         open_mode: %open_mode%
+        passbook_url: %passbook_url%
+        key_securisation: %secret%
     form:
         resources:
             - 'SSNTherapassBundle::forms_template.html.twig'
