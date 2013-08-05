@@ -4,6 +4,8 @@ parameters:
     oxygen_passbook.booking.form.model_class: SSN\TherapassBundle\Form\Model\BookingFormModel
     oxygen_passbook.form.booking.type_class: SSN\TherapassBundle\Form\Type\BookingFormType
     oxygen_passbook.booking.form.class: SSN\TherapassBundle\Form\Handler\BookingForm
+    oxygen_passbook.event_product.form.type_class: SSN\TherapassBundle\Form\Type\EventProductFormType
+    oxygen_passbook.event_product.form.model_class: SSN\TherapassBundle\Form\Model\EventProductFormModel
 
 twig:
     globals:
@@ -30,6 +32,7 @@ oxygen_passbook:
             repository: SSN\TherapassBundle\Entity\Repository\EventRepository
         event_product:
             class: SSN\TherapassBundle\Entity\EventProduct
+            repository: SSN\TherapassBundle\Entity\Repository\EventProductRepository
         event_ticket:
             class: SSN\TherapassBundle\Entity\EventTicket
         event_product_slot:
