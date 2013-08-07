@@ -1,23 +1,26 @@
 ssn_public:
-    resource: "@SSNTherapassBundle/Resources/config/routes/public.yml"
+    resource: "@SSNTherapassBundle/Resources/config/routing/public.yml"
     prefix: /
 ssn_admin:
-    resource: "@SSNTherapassBundle/Resources/config/routes/admin.yml"
+    resource: "@SSNTherapassBundle/Resources/config/routing/admin.yml"
     prefix: /admin
 ssn_security:
-    resource: "@SSNTherapassBundle/Resources/config/routes/security.yml"
+    resource: "@SSNTherapassBundle/Resources/config/routing/security.yml"
     prefix: /
     
 oxygen_passbook_admin_event:
-    resource: "@OxygenPassbookBundle/Resources/config/routes/event.yml"
+    resource: "@OxygenPassbookBundle/Resources/config/routing/event.yml"
     prefix: /admin
 oxygen_passbook_admin_booking:
-    resource: "@OxygenPassbookBundle/Resources/config/routes/booking-admin.yml"
+    resource: "@OxygenPassbookBundle/Resources/config/routing/booking-admin.yml"
     prefix: /admin
 oxygen_passbook_admin_printing:
-    resource: "@OxygenPassbookBundle/Resources/config/routes/printing-admin.yml"
+    resource: "@OxygenPassbookBundle/Resources/config/routing/printing-admin.yml"
     prefix: /admin
+oxygen_passbook_api:
+    resource: "@OxygenPassbookBundle/Resources/config/routing/api.yml"
+    prefix: /api/passbook
  
 ssn_therapass_booking:
-    resource: "@SSNTherapassBundle/Resources/config/routes/booking.yml"
+    resource: "@SSNTherapassBundle/Resources/config/routing/booking.yml"
     prefix: /booking   
