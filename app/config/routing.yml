@@ -17,6 +17,9 @@ oxygen_passbook_admin_booking:
 oxygen_passbook_admin_printing:
     resource: "@OxygenPassbookBundle/Resources/config/routing/printing-admin.yml"
     prefix: /admin
+ssn_therapass_admin_weezevent:
+    resource: "@SSNTherapassBundle/Resources/config/routing/admin-weezevent.yml"
+    prefix: /admin/weezevent
 oxygen_passbook_api:
     resource: "@OxygenPassbookBundle/Resources/config/routing/api.yml"
     prefix: /api/passbook
