@@ -42,7 +42,7 @@ oxygen_passbook:
         booking_person:
             class: SSN\TherapassBundle\Entity\BookingPerson
             repository: SSN\TherapassBundle\Entity\Repository\BookingPersonRepository
-    event_types: [care, conference]
+    event_types: [care, conference, workshop_adult]
 
 oxygen_weezevent:
       apikey: %weezevent_api_key%
