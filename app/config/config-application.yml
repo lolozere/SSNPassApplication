@@ -26,10 +26,14 @@ oxygen_framework:
             light: 'SSNTherapassBundle::layout-light.html.twig'
             
 oxygen_passbook:
+    # default types created with the app installation
+    event_types: [care, conference, workshop_adult]
     entities:
         event:
             class: SSN\TherapassBundle\Entity\Event
             repository: SSN\TherapassBundle\Entity\Repository\EventRepository
+        event_type:
+            class: SSN\TherapassBundle\Entity\EventType
         event_product:
             class: SSN\TherapassBundle\Entity\EventProduct
             repository: SSN\TherapassBundle\Entity\Repository\EventProductRepository
@@ -42,7 +46,6 @@ oxygen_passbook:
         booking_person:
             class: SSN\TherapassBundle\Entity\BookingPerson
             repository: SSN\TherapassBundle\Entity\Repository\BookingPersonRepository
-    event_types: [care, conference, workshop_adult]
 
 oxygen_weezevent:
       apikey: %weezevent_api_key%

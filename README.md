@@ -37,6 +37,46 @@ Aucun test automatisé n'a été implémenté sur cette application.
 
 Une documentation utilisateur est disponible ici : [doc PDF](./src/SSN/TherapassBundle/Resources/public/SSN-DocumentationPlateforme.pdf)
 
+# Développer l'application
 
+## Entités (Model)
 
+Le bundle OxygenFrameworkBundle offre des fonctionnalités pour développer un bundle avec un modèle de données hautement paramétrable. Voici quelques explications et tutoriels pour manipuler les entités.
+
+### Déclarer une entité
+
+**Ceci s'applique uniquement si vous créez une entité dans un bundle Oxygen.** Autrement vous faites comme vous voulez.
+
+Pour ajouter une entité, vous devez :
+
+* Créer la classe abstraite dans le dossier Model du bundle et l'implémenter en créant la classe entité dans le dossier Entity
+* Déclarer la confguration de base dans la classe de configuration du bundle
+
+	```	
+	<?php
+	// Oxygen\PassbookBundle\DependencyInjection
+	
+	$this->addEntityConfiguration($rootNode, 'Oxygen\PassbookBundle\Entity\EventType', 'Oxygen\PassbookBundle\Entity\Repository\EventTypeRepository');
+	
+	```
+
+* Créer un fichier XML décrivant l'entité dans le dossier Resources/entities du bundle et qui sera copié/coller dans le bundle l'implémentant.
+
+### Implémenter / étendre l'entité
+
+Une entité d'un bundle Oxygen s'implémente dans un autre bundle (ici SSNTherapassBundle).
+
+* Copier / coller dans le dossier Resources/config/doctrine le fichier exemple XML de l'entité et l'éditer pour fixer le nom de la table.
+* Créer la classe héritant de celle se trouvant le bundle Oxygen correspondant
+* Fixer dans la configuration de l'application les classes liées à l'entité
+
+	```yaml
+	oxygen_passbook:
+    	# default types created with the app installation
+    	event_types: [care, conference, workshop_adult]
+   		entities:
+        	event:
+            	class: SSN\TherapassBundle\Entity\Event
+            	repository: SSN\TherapassBundle\Entity\Repository\EventRepository
+	```
 
