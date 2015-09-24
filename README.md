@@ -28,6 +28,12 @@ Il est inclut par le fichier config.yml de l'application. Présentation détaill
 
 * **open_mode** : admin|full|null / Est utilisé dans les templates twig pour désactiver l'accès aux réservations si ce n'est pas égal à *full*. Si égal à *admin* alors seul le lien d'accès à l'administration est affiché en pied de page.
 
+## Charger les données de base
+
+```
+$ php app/console doctrine:fixtures:load --fixtures=./src/SSN/TherapassBundle/Fixtures/ --append
+```
+
 
 ## Tests automatisés
 
