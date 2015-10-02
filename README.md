@@ -37,7 +37,24 @@ $ php app/console doctrine:fixtures:load --fixtures=./src/SSN/TherapassBundle/Fi
 
 ## Tests automatisés
 
-Aucun test automatisé n'a été implémenté sur cette application.
+Les tests implémentés sont dans SSNTherapassBundle et sont des tests fonctionnels. Les fonctionnalités testées sont :
+
+* Authentification Weezevent avec un ticket (en cours)
+
+Pour jouer les tests :
+
+* Créer une base de données ssn_resaapp_test sur votre serveur MySQL
+* Modifier les variables de configuration dans parameters.yml
+
+```
+parameters:
+    ...
+    test_database_name:     ssn_resaapp_test
+    test_database_user:     root
+    test_database_password: root
+    ...
+```
+
 
 ## Documentation utilisateur
 

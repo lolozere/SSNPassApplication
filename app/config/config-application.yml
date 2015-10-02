@@ -6,6 +6,8 @@ parameters:
     oxygen_passbook.booking.form.class: SSN\TherapassBundle\Form\Handler\BookingForm
     oxygen_passbook.event_product.form.type_class: SSN\TherapassBundle\Form\Type\EventProductFormType
     oxygen_passbook.event_product.form.model_class: SSN\TherapassBundle\Form\Model\EventProductFormModel
+    oxygen_passbook.form.booking_person.type_class: SSN\TherapassBundle\Form\Type\BookingPersonFormType
+    oxygen_passbook.booking_person.form.model_class: SSN\TherapassBundle\Form\Model\BookingPersonFormModel
 
 twig:
     globals:
